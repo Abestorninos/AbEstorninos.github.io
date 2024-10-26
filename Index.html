@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside >
+        <div id="photos"></div>
+        <p>Happy 27th Birthday Ate! 🎉 As you step into this exciting year, may it be filled with joy, adventure, and all the dreams you’ve been chasing. At 27, you’re perfectly positioned to embrace new opportunities and create unforgettable memories. Celebrate yourself today you deserve all the love and happiness in the world! Cheers to another amazing year ahead! 🥳💖</p>
+    </aside>
+    <p id="p-img">Photos</p>
+    <section class="slider-container">
+        <div class="slider-images">
+          <div class="slider-img">
+            <img src="Images1.jpg" alt="1" />
+          </div>
+          <div class="slider-img">
+            <img src="Images2.jpg" alt="2" />
+          </div>
+          <div class="slider-img">
+            <img src="Images3.jpg" alt="3" />
+          </div>
+          <div class="slider-img active">
+           
+          </div>
+        
+          </div>
+        </div>
+      </section>
+    <script src="script.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+</body>
+</html>
